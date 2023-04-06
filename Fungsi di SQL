@@ -1,0 +1,19 @@
+#Fungsi Skalar Matematika - ABS()#
+select StudentID, FirstName, LastName, Semester1, Semester2, abs(markgrowth) as MarkGrowth from students;
+
+#Fungsi Skalar Matematika - CEILING()#
+select StudentID, FirstName, LastName, ceiling(Semester1) as Semester1, ceiling(Semester2) as Semester2, MarkGrowth from students;
+
+#Fungsi Skalar Matematika - FLOOR()#
+select StudentID, FirstName, LastName, floor(Semester1) as Semester1, floor(Semester2) as Semester2, MarkGrowth from students;
+
+#Fungsi Skalar Matematika - ROUND()#
+SELECT StudentID, FirstName, LastName, ROUND(Semester1,1) AS Semester1, ROUND(Semester2,0) AS Semester2, MarkGrowth
+FROM students;
+
+#Fungsi Skalar Matematika - SQRT( )#
+SELECT StudentID, FirstName, LastName, SQRT(Semester1) AS Semester1, Semester2, MarkGrowth
+FROM students;
+
+#Tugas Praktek#
+SELECT StudentID, FirstName, LastName, MOD(Semester1,2) AS Semester1 , Semester2, EXP(MarkGrowth) FROM students;
